@@ -25,3 +25,16 @@ try:
 except FileNotFoundError:
     print("That file was not found :(")
 # print(file.closed)
+
+
+# * file writing in python
+
+
+text = "prova scrittura\n prova scrittura test"
+
+# 'r' for reading
+# 'w' for overwriting
+# 'a' for append / writing after what's already written 
+
+with open('text.txt', 'a')as file:
+    file.write(text)
