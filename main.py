@@ -38,3 +38,15 @@ text = "prova scrittura\n prova scrittura test"
 
 with open('text.txt', 'a')as file:
     file.write(text)
+
+
+# * file copyng in python
+
+    # copyfile() = copies contents of a file
+    # copy() = copyfile() + permission mode + destination can be a directory 
+    # copy2() = copy() + copies metadata (files's creation and modification times)
+
+import shutil
+
+shutil.copyfile('test.txt', 'text.txt') #src and dst
+    
