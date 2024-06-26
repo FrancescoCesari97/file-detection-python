@@ -50,3 +50,18 @@ import shutil
 
 shutil.copyfile('test.txt', 'text.txt') #src and dst
     
+
+# * moving file in python
+
+source = "test.txt"
+destination = "D:\\corso web developer\\test.txt"
+
+
+try: 
+    if os.path.exists(destination):
+        print("There is already a file there")
+    else:
+        os.replace(source, destination)
+        print(source + "was moved")
+except FileNotFoundError:
+    print(source + "was not found")
